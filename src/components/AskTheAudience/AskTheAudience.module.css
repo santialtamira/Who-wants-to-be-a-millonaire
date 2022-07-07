@@ -1,0 +1,16 @@
+.wildcard{
+    border: rgb(250,155,3) 2px solid;
+    background-color: rgb(250,155,3);
+    color: rgb(255,255,255);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 15px;    
+    margin: 20px;
+    min-width: 280px;
+}
+
+.wildcard:hover{
+    border: rgb(255,255,255) 2px solid;
+    background-color: rgb(255,255,255);
+    color: rgb(250,155,3);
+}

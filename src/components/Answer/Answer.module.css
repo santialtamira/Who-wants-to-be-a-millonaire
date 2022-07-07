@@ -1,0 +1,18 @@
+.answer{
+    border: rgb(250,155,3) 2px solid;
+    background-color: rgb(11,14,72);
+    color: rgb(255,255,255);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 15px;    
+    justify-content: center;
+    text-align: start;
+    margin: 15px;
+    min-width: 370px;
+}
+
+.answer:hover{
+    color: rgb(11,14,72);
+    border: rgb(250,155,30) solid 1px;
+    background-color: rgba(250,155,30,0.7);
+}
