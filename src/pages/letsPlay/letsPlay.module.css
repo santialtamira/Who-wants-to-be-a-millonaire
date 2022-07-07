@@ -9,7 +9,6 @@
     display: grid;
     place-items: center;
     height: 50%;
-    /* background-color: red; */
 }
 
 .firstTwoQuestions{
@@ -30,3 +29,10 @@ span{
     text-align: center;
 }
 
+.counterAndAmount{
+    display: flex;
+    color: rgb(255,255,255);
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30px;
+}

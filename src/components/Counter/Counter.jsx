@@ -1,7 +1,7 @@
 import s from "./Counter.module.css";
 
-export default function Counter(){
+export default function Counter(props){
     return(
-        <div className={s.whiteCounter}>60</div>
+        <div className={props.seconds > 10 ? s.whiteCounter : s.redCounter}>{props.seconds}</div>
     )
 }
