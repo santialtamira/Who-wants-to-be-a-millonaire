@@ -1,0 +1,40 @@
+.container{
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/71wZi-+gTRL.jpg');
+    height: 100vh;
+    background-position: center ;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.titleAndBtn{
+
+}
+
+.title{
+    color: rgb(255,255,255);
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    min-width: 370px;
+    margin: 15px auto;
+    max-width: 757px;
+}
+
+.btn{
+    border: rgb(250,155,3) 2px solid;
+    background-color: rgb(11,14,72);
+    color: rgb(255,255,255);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 85px;    
+    text-align: center;
+    margin: 20px auto;
+    display: grid;
+    place-items: center;
+}
+
+.btn:hover{
+    color: rgb(11,14,72);
+    border: rgb(250,155,30) solid 1px;
+    background-color: rgba(250,155,30,0.7);
+}

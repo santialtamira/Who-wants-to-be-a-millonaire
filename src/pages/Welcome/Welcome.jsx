@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import s from "./Welcome.module.css";
 
-export default function Landing(){
+export default function Welcome(){
     const navigate = useNavigate();
     function handleClickPlay(){
         navigate("/letsPlay")

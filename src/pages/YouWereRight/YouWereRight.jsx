@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import s from "./YouLoose.module.css";
+import s from "./YouWereRight.module.css";
 
-export default function YouLoose(){
+export default function YouWereRight(){
+
     const navigate = useNavigate();
     function handleClickPlay(){
         navigate("/letsPlay")
@@ -10,8 +11,8 @@ export default function YouLoose(){
     return(
         <div className={s.container}>
             <div className={s.titleAndBtn}>
-                <h1 className={s.title}>Sorry, you loosed.. thanks for participating</h1>
-                <button className={s.btn} onClick={handleClickPlay}>PLAY AGAIN</button>
+                <h1 className={s.title}>You were right!</h1>
+                <button className={s.btn} onClick={handleClickPlay}>NEXT QUESTION</button>
             </div>
         </div>
     )
