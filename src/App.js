@@ -9,6 +9,7 @@ import LetsPlay from "./pages/letsPlay/letsPlay";
 import YouLoose from "./pages/YouLoose/YouLoose";
 import YouWereRight from "./pages/YouWereRight/YouWereRight";
 import YouWon from "./pages/YouWon/YouWon";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/youLoosed' element={<YouLoose />} />
         <Route path='/youWereRight' element={<YouWereRight />} />
         <Route path='/youWon' element={<YouWon />} />
+        <Route path="*" exact={true} element={<NotFound />} />
       </Routes>
     </div>
   );

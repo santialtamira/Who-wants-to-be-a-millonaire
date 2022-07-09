@@ -2,7 +2,7 @@
     color: var(--white);
     text-align: center;
     background-color: var(--transparentBlack);
-    min-width: 370px;
+    min-width: 330px;
     margin: 15px auto;
     max-width: 757px;
     border: 1px solid var(--yellow);

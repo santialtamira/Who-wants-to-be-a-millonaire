@@ -1,8 +1,7 @@
+
 .container{
-    background-image: url('https://images-na.ssl-images-amazon.com/images/I/71wZi-+gTRL.jpg');
+    background-color: var(--blue);
     height: 100vh;
-    background-position: center ;
-    background-size: cover;
     display: grid;
     place-items: center;
 }
@@ -14,6 +13,7 @@
     min-width: 370px;
     margin: 15px auto;
     max-width: 757px;
+    padding: 0px 15px;
 }
 
 .btn{
@@ -34,3 +34,4 @@
     border: var(--yellow) solid 1px;
     background-color: var(--transparentYellow);
 }
+

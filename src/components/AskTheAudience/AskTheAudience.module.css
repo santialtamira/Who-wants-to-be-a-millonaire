@@ -1,4 +1,4 @@
-.wildcard{
+.wildcardATA{
     border: var(--yellow) 2px solid;
     background-color: var(--yellow);
     color: var(--white);
@@ -9,7 +9,7 @@
     min-width: 280px;
 }
 
-.wildcard:hover{
+.wildcardATA:hover{
     border: var(--white) 2px solid;
     background-color: var(--white);
     color: var(--yellow);

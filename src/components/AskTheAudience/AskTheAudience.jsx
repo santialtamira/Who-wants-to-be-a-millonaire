@@ -21,7 +21,7 @@ function AskTheAudience(props){
     }
 
     return(
-        <button className={s.wildcard}  onClick={askAudience}> Ask the audience</button>
+        <button className={s.wildcardATA}  onClick={askAudience}> Ask the audience</button>
     )
 }
 
