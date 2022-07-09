@@ -71,7 +71,6 @@ function LetsPlay(props){
     
     useEffect(() => {
         chooseQuestion();
-        console.log("questionAndAnswers ", questionAndAnswers)
     }, [questionAndAnswers]);
     
     return(
@@ -86,7 +85,7 @@ function LetsPlay(props){
                     <div className={s.fourQuestions}>
                         {
                             questionAndAnswers.a? questionAndAnswers.a.map( (answer, index) =>{
-                                return <Answer key={index} questionAndAnswers={questionAndAnswers} option={answer}></Answer>
+                                return <Answer seconds={seconds} key={index} questionAndAnswers={questionAndAnswers} option={answer}></Answer>
                             })
                             : <Answer option={""}></Answer>
                         }
