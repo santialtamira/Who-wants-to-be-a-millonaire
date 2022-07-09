@@ -1,4 +1,4 @@
-import {MOVE_TO_NEXT_ROUND, SPEND_DISMISS_TWO_OPTIONS, SPEND_ASK_THE_AUDIENCE} from "../actions/index"
+import {MOVE_TO_NEXT_ROUND, SPEND_DISMISS_TWO_OPTIONS, SPEND_ASK_THE_AUDIENCE, SET_WILCARDS_TO_ZERO} from "../actions/index"
 
 const initialState = {
     round: 200,
@@ -26,8 +26,16 @@ function rootReducer(state = initialState, action) {
             askTheAudienceSpent: 1,
         }
     }
+    if (action.type === SET_WILCARDS_TO_ZERO) {
+        return {
+            ...state,
+            askTheAudienceSpent: 0,
+            dismissTwoOptionsSpent: 0,
+        }
+    }
 
     return state;
 }
 
 export default rootReducer;
+

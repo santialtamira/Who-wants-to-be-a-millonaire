@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --yellow: rgb(250,155,3);
+  --white: rgb(255,255,255);
+  --blue: rgb(11,14,72);
+  --transparentYellow: rgba(250,155,30,0.7);
+  --transparentBlack: rgba(0,0,0,0.7);
+  --red: red;
+  --disabledBackground: rgba(239, 239, 239, 0.3);
+  --disabledLetter: rgba(16, 16, 16, 0.3);
+  --disabledBorder: rgba(118, 118, 118, 0.3);
+}

@@ -83,7 +83,7 @@ function LetsPlay(props){
             <div className={s.questionAndAnswers}>
                 <Question q={questionAndAnswers.q}></Question>
                 <div>
-                    <div className={s.firstTwoQuestions}>
+                    <div className={s.fourQuestions}>
                         {
                             questionAndAnswers.a? questionAndAnswers.a.map( (answer, index) =>{
                                 return <Answer key={index} questionAndAnswers={questionAndAnswers} option={answer}></Answer>

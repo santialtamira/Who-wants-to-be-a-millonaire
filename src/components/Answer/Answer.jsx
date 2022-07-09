@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import s from "./Answer.module.css";
-import {nextRound} from "../../actions/index";
+import {nextRound, resetWildcards} from "../../actions/index";
 
 
 function mapStateToProps(state){
@@ -31,8 +31,8 @@ function Answer(props){
                 }
             }
         }else{
-            console.log("Le erraste maestro");
             props.nextRound(200);
+            props.resetWildcards();
             return navigate("/youLoosed");
         }
     }
@@ -42,4 +42,4 @@ function Answer(props){
     )
 }
 
-export default connect(mapStateToProps,{nextRound})(Answer)
+export default connect(mapStateToProps,{nextRound, resetWildcards})(Answer)

@@ -1,7 +1,7 @@
 .wildcard{
-    border: rgb(250,155,3) 2px solid;
-    background-color: rgb(250,155,3);
-    color: rgb(255,255,255);
+    border: var(--yellow) 2px solid;
+    background-color: var(--yellow);
+    color: var(--white);
     border-radius: 5px;
     font-size: 18px;
     padding: 10px 15px;    
@@ -10,15 +10,15 @@
 }
 
 .wildcard:hover{
-    border: rgb(255,255,255) 2px solid;
-    background-color: rgb(255,255,255);
-    color: rgb(250,155,3);
+    border: var(--white) 2px solid;
+    background-color: var(--white);
+    color: var(--yellow);
 }
 
 button:disabled{
-    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
-    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
-    border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+    background-color: var(--disabledBackground);
+    color: var(--disabledLetter);
+    border-color: var(--disabledBorder);
     border-radius: 5px !important;
     font-size: 18px !important;
     padding: 10px 15px !important;    
