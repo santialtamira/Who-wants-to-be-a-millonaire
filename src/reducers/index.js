@@ -1,8 +1,10 @@
-import {MOVE_TO_NEXT_ROUND} from "../actions/index"
+import {MOVE_TO_NEXT_ROUND, SPEND_DISMISS_TWO_OPTIONS, SPEND_ASK_THE_AUDIENCE} from "../actions/index"
 
 const initialState = {
     round: 200,
     allRounds: [200,500,1000],
+    dismissTwoOptionsSpent: 0,
+    askTheAudienceSpent: 0,
 };
 
 function rootReducer(state = initialState, action) {
@@ -10,6 +12,18 @@ function rootReducer(state = initialState, action) {
         return {
             ...state,
             round: action.payload,
+        }
+    }
+    if (action.type === SPEND_DISMISS_TWO_OPTIONS) {
+        return {
+            ...state,
+            dismissTwoOptionsSpent: 1,
+        }
+    }
+    if (action.type === SPEND_ASK_THE_AUDIENCE) {
+        return {
+            ...state,
+            askTheAudienceSpent: 1,
         }
     }
 

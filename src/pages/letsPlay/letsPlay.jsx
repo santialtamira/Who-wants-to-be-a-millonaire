@@ -38,7 +38,6 @@ function LetsPlay(props){
         setQuestionAndAnswers(choosenQuestion)
         return choosenQuestion;
     }
-    // console.log("PREGUNTA ELEGIDA",chooseQuestion()); 
     
     function reset() {
         setSeconds(60);
@@ -94,10 +93,10 @@ function LetsPlay(props){
                     </div>
                 </div>
             </div>
-            <div className={s.wildcards}>
-                <AskTheAudience></AskTheAudience>
-                <DismissTowOptions></DismissTowOptions>                
-            </div>
+            <section className={s.wildcards}>
+                <AskTheAudience questionAndAnswers={questionAndAnswers}></AskTheAudience>
+                <DismissTowOptions questionAndAnswers={questionAndAnswers}></DismissTowOptions>                
+            </section>
         </div>
     )
 }
