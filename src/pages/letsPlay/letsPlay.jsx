@@ -24,7 +24,7 @@ function mapStateToProps(state) {
 
 function LetsPlay(props){
     
-    const [seconds, setSeconds] = useState(60);
+    const [seconds, setSeconds] = useState(11);
     const [active, setActive] = useState(true);
     const [questionAndAnswers, setQuestionAndAnswers] = useState({});
     const navigate = useNavigate();
@@ -55,7 +55,9 @@ function LetsPlay(props){
         if (seconds === 0 ) {
             reset();
             clearInterval(interval);
-            swal.close()
+            if(swal.getState().isOpen){
+                swal.close()
+            }
             navigate("/youLoosed")
         }
         return () => clearInterval(interval);

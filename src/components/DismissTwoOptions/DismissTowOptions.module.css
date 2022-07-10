@@ -19,9 +19,9 @@ button:disabled{
     background-color: var(--disabledBackground);
     color: var(--disabledLetter);
     border-color: var(--disabledBorder);
-    border-radius: 5px !important;
-    font-size: 18px !important;
-    padding: 10px 15px !important;    
-    margin: 20px !important;
-    min-width: 280px !important; 
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 15px;    
+    margin: 11px;
+    min-width: 280px; 
 }
