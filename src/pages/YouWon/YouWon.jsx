@@ -21,8 +21,11 @@ function YouWon(props){
     return(
         <div className={s.container}>
             <div className={s.titleAndBtn}>
-                <div className={s.title}>Congratulations!, you are the new CHAMPION
-                    of WHO WANTS TO BE A MILLONAIRE. Enjoy your prize of {<span>{props.winningAtTheMoment}€</span>}!
+                <div className={s.title}>Congratulations!. You are the new 
+                    <br />
+                    CHAMPION of WHO WANTS TO BE A MILLONAIRE.
+                    <br />
+                    Enjoy your prize of {<span>{props.winningAtTheMoment}€</span>}!
                 </div>
                 <button className={s.btn} onClick={handleClickPlay}>PLAY AGAIN</button>
             </div>

@@ -12,6 +12,7 @@ import YouWereRight from "./pages/YouWereRight/YouWereRight";
 import YouWon from "./pages/YouWon/YouWon";
 import NotFound from "./pages/NotFound/NotFound";
 import YouWonMoney from "./pages/YouWonMoney/YouWonMoney";
+import Help from "./pages/Help/Help";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/youWereRight' element={<YouWereRight />} />
         <Route path="/youWonMoney" exact={true} element={<YouWonMoney />} />
         <Route path='/youWon' element={<YouWon />} />
+        <Route path='/help' element={<Help />} />
         <Route path="*" exact={true} element={<NotFound />} />
       </Routes>
     </div>

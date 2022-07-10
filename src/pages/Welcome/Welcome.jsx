@@ -8,7 +8,7 @@ export default function Welcome(){
     }
 
     function handleClickPlayHelp(){
-        // navigate("/help")
+        navigate("/help")
     }
 
     return(
