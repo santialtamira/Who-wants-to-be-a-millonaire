@@ -22,4 +22,5 @@ code {
   --disabledBackground: rgba(239, 239, 239, 0.3);
   --disabledLetter: rgba(16, 16, 16, 0.3);
   --disabledBorder: rgba(118, 118, 118, 0.3);
+  --backgroundImage: url('https://images-na.ssl-images-amazon.com/images/I/71wZi-+gTRL.jpg');
 }
