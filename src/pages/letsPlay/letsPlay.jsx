@@ -27,7 +27,7 @@ function mapStateToProps(state) {
 
 function LetsPlay(props){
     
-    const [seconds, setSeconds] = useState(600);
+    const [seconds, setSeconds] = useState(60);
     const [active, setActive] = useState(true);
     const [questionAndAnswers, setQuestionAndAnswers] = useState({});
     const navigate = useNavigate();
