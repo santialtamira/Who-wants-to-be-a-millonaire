@@ -4,7 +4,7 @@ import {MOVE_TO_NEXT_ROUND, SPEND_DISMISS_TWO_OPTIONS, SPEND_ASK_THE_AUDIENCE,
 
 const initialState = {
     round: 200,
-    allRounds: [200,500,1000],
+    allRounds: [200,500,1000, 5000, 25000],
     dismissTwoOptionsSpent: 0,
     askTheAudienceSpent: 0,
     winningAtTheMoment: 0

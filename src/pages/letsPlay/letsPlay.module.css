@@ -57,3 +57,10 @@ span{
     display: flex;
     flex-direction: column;
 }
+
+@media all and  (max-width: 820px){
+    .questionAndAnswers{
+        max-width: 370px;
+        margin: 0px auto;
+    }
+}

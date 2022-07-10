@@ -9,12 +9,12 @@
 
 .title{
     color: var(--white);
-    text-align: center;
     background-color: var(--transparentYellow);
     min-width: 370px;
     margin: 15px auto;
     max-width: 757px;
     padding: 5px 15px;
+    font-size: 2rem;
 }
 
 .btn{
@@ -39,4 +39,11 @@
 h1 span{
     color: var(--white);
     font-size: 3rem;
+}
+
+@media all and  (max-width: 820px){
+    .title{
+        max-width: 345px;
+        min-width: 335px;
+    }
 }
