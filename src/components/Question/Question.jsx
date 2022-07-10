@@ -1,3 +1,4 @@
+// imported styles
 import s from "./Question.module.css";
 
 export default function Question(props){

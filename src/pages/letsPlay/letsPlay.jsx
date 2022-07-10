@@ -1,22 +1,20 @@
+// imported from libraries
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import swal from 'sweetalert';
 
-//import styles
+// imported styles
 import s from "./letsPlay.module.css";
 
-//import components
+// local imported
 import Counter from "../../components/Counter/Counter"
 import Answer from "../../components/Answer/Answer";
 import AskTheAudience from "../../components/AskTheAudience/AskTheAudience";
 import DismissTowOptions from "../../components/DismissTwoOptions/DismissTowOptions";
 import Question from "../../components/Question/Question";
 import Amount from "../../components/Amount/Amount";
-
-//import "data base" with questions and answers.
 import qsAndAs from "../../questionsAndAnswers";
-
 
 function mapStateToProps(state) {
     return {
@@ -25,7 +23,6 @@ function mapStateToProps(state) {
 }
 
 function LetsPlay(props){
-    
     
     const [seconds, setSeconds] = useState(60);
     const [active, setActive] = useState(true);
@@ -45,15 +42,8 @@ function LetsPlay(props){
         setActive(false);
     }
 
-
-    // Si elige mal, porque la respuesta no coincide con la correct answer, entonces lo mando al you loosed.
-    // Si elige bien, lo mando a correct answer. De ahí que tenga un botón que lo lleva a la siguiente pregunta.
-
-    
-    // console.log("Segundo console ya ENTRÉ al COMPONENTE")
     useEffect(() => {
         let interval = null;
-        // console.log("Tercer console entré al USE EFFECT")
         if (active) {
             interval = setInterval(() => {
                 setSeconds(seconds => seconds - 1);
@@ -101,5 +91,4 @@ function LetsPlay(props){
         </div>
     )
 }
-
 export default connect(mapStateToProps, {})(LetsPlay)

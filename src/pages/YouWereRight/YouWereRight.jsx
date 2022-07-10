@@ -1,11 +1,14 @@
+// imported from libraries
 import { useNavigate } from "react-router-dom";
+
+// imported styles
 import s from "./YouWereRight.module.css";
 
 export default function YouWereRight(){
 
     const navigate = useNavigate();
     function handleClickPlay(){
-        navigate("/letsPlay")
+        navigate("/letsPlay");
     }
 
     return(

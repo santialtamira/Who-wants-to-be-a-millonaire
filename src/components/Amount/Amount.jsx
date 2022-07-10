@@ -1,3 +1,4 @@
+// imported styles
 import s from "./Amount.module.css";
 
 export default function Amount(props){

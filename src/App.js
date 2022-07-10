@@ -1,9 +1,10 @@
+// imported from libraries
 import { Route, Routes } from "react-router-dom";
 
-//import styles
+// imported styles
 import './App.css';
 
-//import components
+// local imported
 import Welcome from "./pages/Welcome/Welcome.jsx";
 import LetsPlay from "./pages/letsPlay/letsPlay";
 import YouLoose from "./pages/YouLoose/YouLoose";
@@ -25,5 +26,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -1,5 +1,4 @@
 
-
 let qsAndAs = [{q: "Wich is Portugal´s Capital?", a: ["Madrid", "Lisboa", "Berna", "Paris"], level: 200, correctAnswer: "Lisboa" },
 {q: "what football player has the most ballon d'or?", a: [ "Cristiano Ronaldo", "Johan Cruyff", "Pele","Lionel Messi"], correctAnswer: "Lionel Messi", level: 200},
 {q: "How many fingers do the characters in The Simpsons have?", a: ["4", "5", "3", "6"], correctAnswer: "4", level: 200},

@@ -1,3 +1,4 @@
+// imported styles
 import s from "./Counter.module.css";
 
 export default function Counter(props){

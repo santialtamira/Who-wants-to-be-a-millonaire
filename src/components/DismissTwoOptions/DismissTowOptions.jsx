@@ -1,7 +1,12 @@
+// imported from libraries
 import { connect } from "react-redux";
-import s from "./DismissTowOptions.module.css";
-import { playDismissTwoOptions } from "../../actions";
 import swal from 'sweetalert';
+
+// imported styles
+import s from "./DismissTowOptions.module.css";
+
+// local imported
+import { playDismissTwoOptions } from "../../actions";
 
 function mapStatesToProp(state){
     return{
@@ -32,5 +37,4 @@ function DismissTowOptions(props){
         <button className={s.wildcard} id={"btnAnswer"} onClick={useWildcard}> Dismiss two options</button>
     )
 }
-
 export default connect(mapStatesToProp, {playDismissTwoOptions})(DismissTowOptions)

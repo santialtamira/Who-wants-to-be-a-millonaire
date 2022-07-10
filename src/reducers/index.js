@@ -33,9 +33,7 @@ function rootReducer(state = initialState, action) {
             dismissTwoOptionsSpent: 0,
         }
     }
-
     return state;
 }
-
 export default rootReducer;
 

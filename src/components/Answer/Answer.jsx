@@ -1,10 +1,13 @@
+// imported from libraries
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import swal from 'sweetalert';
 
+// imported styles
 import s from "./Answer.module.css";
-import {nextRound, resetWildcards} from "../../actions/index";
 
+// local imported
+import {nextRound, resetWildcards} from "../../actions/index";
 
 function mapStateToProps(state){
     return{
@@ -19,7 +22,6 @@ function Answer(props){
     function finalAnswer(event){
         event.preventDefault();
         
-
         swal({
             title: "Is this your final answer?",
             buttons: [
@@ -27,7 +29,6 @@ function Answer(props){
                 'Yes, let´s go for it!'
             ],
             dangerMode: true,
-
             }).then(function(isConfirm) {
             if (isConfirm && props.seconds > 0) {
                 if(event.target.innerText === props.questionAndAnswers.correctAnswer){
@@ -52,10 +53,7 @@ function Answer(props){
             } else {
                 
             }
-        })
-    
-
-
+            })
     }
     return(
         <button className={s.answer} onClick={finalAnswer}>{props.option}</button>
