@@ -1,6 +1,6 @@
 .container{
     background-image: url("https://www.lavanguardia.com/peliculas-series/images/serie/backdrop/1998/9/w1280/d61HAPYS3XVYOTRBCKf0LON1cag.jpg");
-    height: 100vh;
+    height: 110vh;
     background-position: center ;
     background-size: cover;
 }
@@ -39,4 +39,21 @@ span{
     .fourQuestions{
         display: block;
     }
+
+    .wildcards{
+        margin: 50px auto;
+    }
+}
+
+.cash{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--transparentYellow);
+    padding: 0px 10px 3px 10px;
+    text-align: end;
+}
+
+.amountAndCash{
+    display: flex;
+    flex-direction: column;
 }

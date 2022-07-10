@@ -1,10 +1,13 @@
-import {MOVE_TO_NEXT_ROUND, SPEND_DISMISS_TWO_OPTIONS, SPEND_ASK_THE_AUDIENCE, SET_WILCARDS_TO_ZERO} from "../actions/index"
+import {MOVE_TO_NEXT_ROUND, SPEND_DISMISS_TWO_OPTIONS, SPEND_ASK_THE_AUDIENCE, 
+    SET_WILCARDS_TO_ZERO, INCREASE_WINNING_AT_THE_MOMENT, 
+    WINNING_AT_THE_MOMENT_TO_ZERO} from "../actions/index"
 
 const initialState = {
     round: 200,
     allRounds: [200,500,1000],
     dismissTwoOptionsSpent: 0,
     askTheAudienceSpent: 0,
+    winningAtTheMoment: 0
 };
 
 function rootReducer(state = initialState, action) {
@@ -31,6 +34,18 @@ function rootReducer(state = initialState, action) {
             ...state,
             askTheAudienceSpent: 0,
             dismissTwoOptionsSpent: 0,
+        }
+    }
+    if (action.type === INCREASE_WINNING_AT_THE_MOMENT) {
+        return {
+            ...state,
+            winningAtTheMoment: action.payload,
+        }
+    }
+    if (action.type === WINNING_AT_THE_MOMENT_TO_ZERO) {
+        return {
+            ...state,
+            winningAtTheMoment: 0,
         }
     }
     return state;

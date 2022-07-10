@@ -7,7 +7,8 @@ import swal from 'sweetalert';
 import s from "./Answer.module.css";
 
 // local imported
-import {nextRound, resetWildcards} from "../../actions/index";
+import {nextRound, resetWildcards, winningAtTheMomentToZero, 
+    increaseWinningAtTheMoment} from "../../actions/index";
 
 function mapStateToProps(state){
     return{
@@ -32,6 +33,7 @@ function Answer(props){
             }).then(function(isConfirm) {
             if (isConfirm && props.seconds > 0) {
                 if(event.target.innerText === props.questionAndAnswers.correctAnswer){
+                    props.increaseWinningAtTheMoment(props.round)
                     for(let i = 0; i < props.allRounds.length; i ++){
                         if(props.allRounds[i] === props.round){
                             let nextR = props.allRounds[i + 1];
@@ -48,6 +50,7 @@ function Answer(props){
                 }else{
                     props.nextRound(200);
                     props.resetWildcards();
+                    props.winningAtTheMomentToZero()
                     return navigate("/youLoosed");
                 }
             } else {
@@ -60,4 +63,5 @@ function Answer(props){
         )
     }
     
-export default connect(mapStateToProps,{nextRound, resetWildcards})(Answer);    
+export default connect(mapStateToProps,{nextRound, resetWildcards, winningAtTheMomentToZero,
+    increaseWinningAtTheMoment})(Answer);    

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import swal from 'sweetalert';
+import { NavLink } from 'react-router-dom';
 
 // imported styles
 import s from "./letsPlay.module.css";
@@ -15,16 +16,18 @@ import DismissTowOptions from "../../components/DismissTwoOptions/DismissTowOpti
 import Question from "../../components/Question/Question";
 import Amount from "../../components/Amount/Amount";
 import qsAndAs from "../../questionsAndAnswers";
+import { winningAtTheMomentToZero } from "../../actions";
 
 function mapStateToProps(state) {
     return {
         round: state.round,
+        winningAtTheMoment: state.winningAtTheMoment
     };
 }
 
 function LetsPlay(props){
     
-    const [seconds, setSeconds] = useState(11);
+    const [seconds, setSeconds] = useState(600);
     const [active, setActive] = useState(true);
     const [questionAndAnswers, setQuestionAndAnswers] = useState({});
     const navigate = useNavigate();
@@ -58,6 +61,7 @@ function LetsPlay(props){
             if(swal.getState().isOpen){
                 swal.close()
             }
+            props.winningAtTheMomentToZero()
             navigate("/youLoosed")
         }
         return () => clearInterval(interval);
@@ -71,7 +75,12 @@ function LetsPlay(props){
         <div className={s.container}>
             <div className={s.counterAndAmount}>
                 <Counter seconds={seconds}></Counter>
-                <Amount prize={props.round}></Amount>
+                <div className={s.amountAndCash}>
+                    <Amount prize={props.round}></Amount>
+                    {props.round > 200? <NavLink to="/youWonMoney" className={s.cash} >Cash now {props.winningAtTheMoment}€</NavLink>:
+                    null
+                    }    
+                </div>
             </div>
             <div className={s.questionAndAnswers}>
                 <Question q={questionAndAnswers.q}></Question>
@@ -93,4 +102,4 @@ function LetsPlay(props){
         </div>
     )
 }
-export default connect(mapStateToProps, {})(LetsPlay)
+export default connect(mapStateToProps, {winningAtTheMomentToZero})(LetsPlay)

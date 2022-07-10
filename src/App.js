@@ -11,6 +11,7 @@ import YouLoose from "./pages/YouLoose/YouLoose";
 import YouWereRight from "./pages/YouWereRight/YouWereRight";
 import YouWon from "./pages/YouWon/YouWon";
 import NotFound from "./pages/NotFound/NotFound";
+import YouWonMoney from "./pages/YouWonMoney/YouWonMoney";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/letsPlay' element={<LetsPlay />} />
         <Route path='/youLoosed' element={<YouLoose />} />
         <Route path='/youWereRight' element={<YouWereRight />} />
+        <Route path="/youWonMoney" exact={true} element={<YouWonMoney />} />
         <Route path='/youWon' element={<YouWon />} />
         <Route path="*" exact={true} element={<NotFound />} />
       </Routes>

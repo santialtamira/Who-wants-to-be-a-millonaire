@@ -10,7 +10,7 @@
 .title{
     color: var(--white);
     text-align: center;
-    background-color: var(--transparentYellow);
+    background-color: var(--transparentBlack);
     min-width: 370px;
     margin: 15px auto;
     max-width: 757px;

@@ -25,3 +25,9 @@ button:disabled{
     margin: 11px;
     min-width: 280px; 
 }
+
+@media all and (max-width: 820px){
+    .wildcard{    
+        margin: 0px;  
+    }
+}
