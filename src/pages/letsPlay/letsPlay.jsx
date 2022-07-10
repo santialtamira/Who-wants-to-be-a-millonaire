@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
+import swal from 'sweetalert';
 
 //import styles
 import s from "./letsPlay.module.css";
@@ -64,6 +65,7 @@ function LetsPlay(props){
         if (seconds === 0 ) {
             reset();
             clearInterval(interval);
+            swal.close()
             navigate("/youLoosed")
         }
         return () => clearInterval(interval);

@@ -16,7 +16,7 @@ function AskTheAudience(props){
             return swal("You already used this wildcard, sorry");;
         }
         swal("The audience has spoken!",
-        `${props.questionAndAnswers.correctAnswer} has been choosen with ${70 + Math.floor(Math.random()* 10)}% of the votes.`)
+        `"${props.questionAndAnswers.correctAnswer}" has been choosen with ${70 + Math.floor(Math.random()* 10)}% of the votes.`)
         props.playAskTheAudience()
     }
 

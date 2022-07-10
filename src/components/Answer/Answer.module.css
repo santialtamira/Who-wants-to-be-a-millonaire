@@ -17,16 +17,4 @@
     background-color: var(--transparentYellow);
 }
 
-.example button {
-    background-color: var(--white);
-    border: var(--yellow) 1px solid;
-    color: var(--yellow);
-}
-
-/* .example button:hover{
-    background-color: var(--yellow);
-    border: var(--yellow) 1px solid;
-    color: var(--white);
-    
-} */
 

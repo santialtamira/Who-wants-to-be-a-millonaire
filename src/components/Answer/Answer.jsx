@@ -26,9 +26,7 @@ function Answer(props){
                 ' No, let me think...',
                 'Yes, let´s go for it!'
             ],
-            
-            className: s.example,
-            // className: s.pepe,
+            dangerMode: true,
 
             }).then(function(isConfirm) {
             if (isConfirm && props.seconds > 0) {
@@ -38,6 +36,7 @@ function Answer(props){
                             let nextR = props.allRounds[i + 1];
                             if(props.allRounds.length - 1 === i){
                                 props.nextRound(200);
+                                props.resetWildcards();
                                 return navigate("/youWon");
                             }else{
                                 props.nextRound(nextR);

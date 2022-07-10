@@ -7,17 +7,14 @@
     place-items: center;
 }
 
-.titleAndBtn{
-
-}
-
 .title{
     color: var(--white);
     text-align: center;
-    background-color: var(--transparentBlack);
+    background-color: var(--transparentYellow);
     min-width: 370px;
     margin: 15px auto;
     max-width: 757px;
+    padding: 5px 15px;
 }
 
 .btn{

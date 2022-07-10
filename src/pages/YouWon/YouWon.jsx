@@ -12,7 +12,12 @@ export default function YouWon(){
     return(
         <div className={s.container}>
         <div className={s.titleAndBtn}>
-            <h1 className={s.title}>YOU WON, CONGRATULATIONS!</h1>
+            <h1 className={s.title}>Congratulations!, you are the new CHAMPION
+                <br />
+                of WHO WANTS TO BE A MILLONAIRE.
+                <br />
+                Enjoy your prize!
+            </h1>
             <button className={s.btn} onClick={handleClickPlay}>PLAY AGAIN</button>
         </div>
     </div>
