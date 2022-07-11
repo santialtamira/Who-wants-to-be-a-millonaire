@@ -17,4 +17,14 @@
     background-color: var(--transparentYellow);
 }
 
+.sweetWarningConfirm{
+    background-color: var(--blue);
+    
+}
+
+.sweetWarningConfirm:not([disabled]):hover{
+    background-color: var(--transparentYellow);
+}
+
+
 

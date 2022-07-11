@@ -25,10 +25,14 @@ function Answer(props){
         
         swal({
             title: "Is this your final answer?",
-            buttons: [
-                ' No, let me think...',
-                'Yes, let´s go for it!'
-            ],
+            // buttons: [
+            //     ' No, let me think...',
+            //     'Yes, let´s go for it!'
+            // ],
+            buttons: {
+                cancel : 'No, let me think it..',
+                confirm : {text:'Ok, final answer!',className:`${s.sweetWarningConfirm}`},
+            },
             dangerMode: true,
             }).then(function(isConfirm) {
             if (isConfirm && props.seconds > 0) {
